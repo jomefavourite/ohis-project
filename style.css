@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("./bg.jpg");
+  /* background-position: contain; */
+  height: 100vh;
+  width: 100vw;
+  background-size: cover;
+  font-family: "Roboto", sans-serif;
+  display: grid;
+  place-content: center;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 2rem;
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 1rem;
+}
+
+p {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+p + p {
+  margin-bottom: 2rem;
+}
+
+.section2 {
+  display: grid;
+  place-content: center;
+}
+
+.btn {
+  color: #ffffff;
+  background-color: #f68a24;
+  border-color: #f57d0c;
+  background-image: linear-gradient(to bottom, #f68a24 0%, #ed780a 100%);
+  background-repeat: repeat-x;
+  box-shadow: inset 0 1px 1px rgb(255 255 255 / 25%);
+  border-radius: 3px;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.btn:hover {
+  color: #ffffff;
+  background-color: #de7009;
+  border-color: #f57d0c;
+  background-image: linear-gradient(to bottom, #f58010 0%, #ca6708 100%);
+  background-repeat: repeat-x;
+}
+
+@media (min-width: 768px) {
+  main {
+    grid-template-columns: 1fr 1fr;
+    text-align: left;
+  }
+}
