@@ -7,8 +7,8 @@
 }
 
 body {
-  background-image: url("./bg.jpg");
-  /* background-position: contain; */
+  background-image: url("./bg-mb.jpg");
+  background-position: center;
   height: 100vh;
   width: 100vw;
   background-size: cover;
@@ -22,15 +22,21 @@ main {
   grid-template-columns: 1fr;
   padding: 2rem;
   text-align: center;
+  height: 100vh;
 }
 
 h1 {
   margin-bottom: 1rem;
+  color: #fff;
+
+  text-shadow: #ca6708 0px 0px 10px;
 }
 
 p {
   font-size: 1.5rem;
   font-weight: 500;
+  color: #fff;
+  text-shadow: #ca6708 0px 0px 10px;
 }
 
 p + p {
@@ -67,5 +73,10 @@ p + p {
   main {
     grid-template-columns: 1fr 1fr;
     text-align: left;
+    height: fit-content;
+  }
+
+  body {
+    background-image: url("./bg-des.jpg");
   }
 }
