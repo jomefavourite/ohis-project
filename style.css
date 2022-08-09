@@ -83,7 +83,6 @@ p + p {
 
 @media (min-width: 768px) {
   main {
-    /* grid-template-columns: 1fr 1fr; */
     text-align: right;
     height: fit-content;
   }
@@ -95,6 +94,8 @@ p + p {
   h1 {
     font-size: 4rem;
     text-align: right;
+    max-width: 465px;
+    margin-left: auto;
   }
 
   body {
