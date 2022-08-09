@@ -25,11 +25,18 @@ main {
   height: 100vh;
 }
 
+h1 span {
+  font-size: 2rem;
+  display: block;
+  font-weight: 300;
+}
+
 h1 {
   margin-bottom: 1rem;
   color: #fff;
-
-  text-shadow: #ca6708 0px 0px 10px;
+  text-align: left;
+  text-shadow: #25130250 0px 0px 10px;
+  font-size: 3rem;
 }
 
 p {
@@ -44,20 +51,25 @@ p + p {
 }
 
 .section2 {
-  display: grid;
-  place-content: center;
+  display: flex;
+  align-items: flex-end;
+
+  /* place-content: left bottom; */
 }
 
 .btn {
+  display: block;
+
+  height: fit-content;
   color: #ffffff;
   background-color: #f68a24;
   border-color: #f57d0c;
   background-image: linear-gradient(to bottom, #f68a24 0%, #ed780a 100%);
   background-repeat: repeat-x;
   box-shadow: inset 0 1px 1px rgb(255 255 255 / 25%);
-  border-radius: 3px;
+  border-radius: 5px;
   text-decoration: none;
-  padding: 0.5rem 1rem;
+  padding: 1rem 1.5rem;
   transition: background-color 0.2s ease-in-out;
 }
 
@@ -71,12 +83,28 @@ p + p {
 
 @media (min-width: 768px) {
   main {
-    grid-template-columns: 1fr 1fr;
-    text-align: left;
+    /* grid-template-columns: 1fr 1fr; */
+    text-align: right;
     height: fit-content;
+  }
+
+  h1 span {
+    font-size: 3rem;
+  }
+
+  h1 {
+    font-size: 4rem;
+    text-align: right;
   }
 
   body {
     background-image: url("./bg-des.jpg");
+    background-position: right;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .section2 {
+    justify-content: flex-end;
   }
 }
